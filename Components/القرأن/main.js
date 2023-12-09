@@ -24,9 +24,9 @@ function  quran(){
         let ayatcon= document.querySelector(".ayat");
 
         box.forEach((title,index) =>{
-            title.addEventListener("click",()=>{
+              title.addEventListener("click",async()=>{
                 // https://api.quran.gading.dev/surah/18
-              async fetch(`https://api.alquran.cloud/v1/surah/${index + 1}`)
+             await fetch(`https://api.alquran.cloud/v1/surah/${index + 1}`)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
