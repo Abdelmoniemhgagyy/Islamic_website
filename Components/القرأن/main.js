@@ -4,7 +4,7 @@ quran()
 
 function  quran(){
 
- fetch("http://api.alquran.cloud/v1/meta")
+ fetch("https://api.alquran.cloud/v1/meta")
 
     .then( async (res) => await res.json())
     .then((data) => {
